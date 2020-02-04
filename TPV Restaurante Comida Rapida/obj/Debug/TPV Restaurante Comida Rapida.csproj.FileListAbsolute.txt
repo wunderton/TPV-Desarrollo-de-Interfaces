@@ -1,0 +1,48 @@
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.exe.config
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.exe
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.pdb
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV_Restaurante_Comida_Rapida.Pantalla1.resources
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV_Restaurante_Comida_Rapida.Properties.Resources.resources
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.exe
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.pdb
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csproj.ResolveComReference.cache
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.exe.config
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.exe
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.pdb
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\Interop.AcroPDFLib.dll
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csprojAssemblyReference.cache
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csproj.ResolveComReference.cache
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV_Restaurante_Comida_Rapida.Pantalla1.resources
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV_Restaurante_Comida_Rapida.Properties.Resources.resources
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csproj.GenerateResource.cache
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csproj.CoreCompileInputs.cache
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.exe
+C:\Users\Javerro\Desktop\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.pdb
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.exe.manifest
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.application
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.exe.manifest
+C:\Users\user\Desktop\Javi\ID\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.application
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.exe.config
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.exe.manifest
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.application
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.exe
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\bin\Debug\TPV Restaurante Comida Rapida.pdb
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csprojAssemblyReference.cache
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csproj.ResolveComReference.cache
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV_Restaurante_Comida_Rapida.Pantalla1.resources
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV_Restaurante_Comida_Rapida.Properties.Resources.resources
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.csproj.GenerateResource.cache
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.exe.manifest
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.application
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.exe
+C:\Users\anton\source\repos\TPV Restaurante Comida Rapida\TPV Restaurante Comida Rapida\obj\Debug\TPV Restaurante Comida Rapida.pdb
