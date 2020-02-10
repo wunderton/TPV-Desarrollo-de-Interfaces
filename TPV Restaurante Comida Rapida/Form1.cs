@@ -236,7 +236,7 @@ namespace TPV_Restaurante_Comida_Rapida
 
         private void button11_Click_1(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = tabPage1;
+            tabControl1.SelectedTab = tabPage3;
         }
 
         private void button8_Click_1(object sender, EventArgs e)
