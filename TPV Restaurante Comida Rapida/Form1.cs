@@ -13,6 +13,7 @@ namespace TPV_Restaurante_Comida_Rapida
     public partial class Pantalla1 : Form
     {
         List<producto> carrito = new List<producto>();
+        ListViewItem item = new ListViewItem();
         producto pollo1 = new producto();
         producto pollo2 = new producto();
         producto ternera1 = new producto();
@@ -34,10 +35,10 @@ namespace TPV_Restaurante_Comida_Rapida
         int contadoroferta2;
         int contadoroferta3;
         int contadoroferta4;
-        int numeropedido;
+        int numeropedido = 0;
         String tipopedido;
         ListViewItem elementoListView;
-        double preciopedido;
+        double preciopedido = 0;
 
         public Pantalla1()
         {
@@ -162,12 +163,6 @@ namespace TPV_Restaurante_Comida_Rapida
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage2;
-           
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage3;
@@ -203,20 +198,6 @@ namespace TPV_Restaurante_Comida_Rapida
             
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage6;
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage6;
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage6;
-        }
 
         private void Pantalla1_Load(object sender, EventArgs e)
         {
@@ -244,11 +225,6 @@ namespace TPV_Restaurante_Comida_Rapida
             tabControl1.SelectedTab = tabPage3;
         }
 
-        private void button9_Click_1(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage2;
-        }
-
         private void button12_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage3;
@@ -261,7 +237,7 @@ namespace TPV_Restaurante_Comida_Rapida
 
         private void button14_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedTab = tabPage3;
+            tabControl1.SelectedTab = tabPage5;
         }
 
         private void label34_Click(object sender, EventArgs e)
@@ -272,14 +248,8 @@ namespace TPV_Restaurante_Comida_Rapida
         private void button3_Click(object sender, EventArgs e)
         {
             label50.Text = numeropedido.ToString();
-            label51.Text = tipopedido.ToString();
             label52.Text = preciopedido.ToString();
             tabControl1.SelectedTab = tabPage9;
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage8;
         }
 
         private void label39_Click(object sender, EventArgs e)
@@ -295,11 +265,6 @@ namespace TPV_Restaurante_Comida_Rapida
         private void label41_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage10;
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -321,22 +286,8 @@ namespace TPV_Restaurante_Comida_Rapida
         private void button19_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Pedido realizado con éxito. Diríjase al mostrador para pagar.");
-            numeropedido++;
-        }
-
-        private void button20_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage1;
-        }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage1;
-        }
-
-        private void button22_Click(object sender, EventArgs e)
-        {
-            tabControl1.SelectedTab = tabPage1;
+            Random r = new Random();
+            numeropedido = r.Next(100, 9999);
         }
 
         private void tabPage5_Click(object sender, EventArgs e)
@@ -346,18 +297,23 @@ namespace TPV_Restaurante_Comida_Rapida
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            contadorternera1 = Convert.ToInt32(Math.Round(numericUpDown1.Value, 0));
+            contadorternera1 = Convert.ToInt32(Math.Round(numericUpDown1.Value));
             productoActual = ternera1;
+           
             for (int i = 0; i < contadorternera1; i++)
             {
+                preciopedido += ternera1.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                //item.SubItems.Add();
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void button27_Click(object sender, EventArgs e)
         {
             label50.Text = numeropedido.ToString();
-            label51.Text = tipopedido.ToString();
             label52.Text = preciopedido.ToString();
             tabControl1.SelectedTab = tabPage9;
             
@@ -365,12 +321,17 @@ namespace TPV_Restaurante_Comida_Rapida
 
         private void button26_Click(object sender, EventArgs e)
         {
-            contadorpollo1 = Convert.ToInt32(Math.Round(numericUpDown5.Value, 0));
+            contadorpollo1 = Convert.ToInt32(Math.Round(numericUpDown5.Value));
             productoActual = pollo1;
+            
             for (int i = 0; i < contadorpollo1; i++)
             {
+                preciopedido += pollo1.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void numericUpDown5_ValueChanged(object sender, EventArgs e)
@@ -380,125 +341,139 @@ namespace TPV_Restaurante_Comida_Rapida
 
         private void button32_Click(object sender, EventArgs e)
         {
-            contadorpollo2 = Convert.ToInt32(Math.Round(numericUpDown6.Value, 0));
+            contadorpollo2 = Convert.ToInt32(Math.Round(numericUpDown6.Value));
             productoActual = pollo2;
+            
             for (int i = 0; i < contadorpollo2; i++)
             {
+                preciopedido += pollo2.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
-            contadorternera2 = Convert.ToInt32(Math.Round(numericUpDown2.Value, 0));
+            contadorternera2 = Convert.ToInt32(Math.Round(numericUpDown2.Value));
             productoActual = ternera2;
+            
             for (int i = 0; i < contadorternera2; i++)
             {
+                preciopedido += ternera2.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
-            contadorternera3 = Convert.ToInt32(Math.Round(numericUpDown3.Value, 0));
+            contadorternera3 = Convert.ToInt32(Math.Round(numericUpDown3.Value));
             productoActual = ternera3;
+           
             for (int i = 0; i < contadorternera3; i++)
             {
+                preciopedido += ternera3.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            contadorternera4 = Convert.ToInt32(Math.Round(numericUpDown4.Value, 0));
+            contadorternera4 = Convert.ToInt32(Math.Round(numericUpDown4.Value));
             productoActual = ternera4;
+            
             for (int i = 0; i < contadorternera4; i++)
             {
+                preciopedido += ternera4.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void button28_Click(object sender, EventArgs e)
         {
-            contadoroferta1 = Convert.ToInt32(Math.Round(numericUpDown8.Value, 0));
+            contadoroferta1 = Convert.ToInt32(Math.Round(numericUpDown8.Value));
             productoActual = oferta1;
-            for (int i = 0; i < contadoroferta1; i++) {
+            
+
+            for (int i = 0; i < contadoroferta1; i++) 
+            {
+                preciopedido += oferta1.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void button30_Click(object sender, EventArgs e)
         {
             contadoroferta2 = Convert.ToInt32(Math.Round(numericUpDown9.Value, 0));
             productoActual = oferta2;
+            
             for (int i = 0; i < contadoroferta2; i++)
             {
+                preciopedido += oferta2.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void button29_Click(object sender, EventArgs e)
         {
             contadoroferta3 = Convert.ToInt32(Math.Round(numericUpDown7.Value, 0));
             productoActual = oferta3;
+
             for (int i = 0; i < contadoroferta3; i++)
             {
+                preciopedido += oferta3.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void button31_Click(object sender, EventArgs e)
         {
             contadoroferta4 = Convert.ToInt32(Math.Round(numericUpDown10.Value, 0));
             productoActual = oferta4;
+
             for (int i = 0; i < contadoroferta4; i++)
             {
+                preciopedido += oferta4.getPrecio();
+                item = listView1.Items.Add((productoActual.getNombre()).ToString());
+                item.SubItems.Add((productoActual.getPrecio()).ToString());
                 carrito.Add(productoActual);
             }
+            MessageBox.Show("Producto añadido al pedido");
         }
 
         private void label50_Click(object sender, EventArgs e)
         {
-            //label50.Text = numeropedido.ToString();
-        }
-
-        private void radioButton5_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton5.Checked == true) {
-                tipopedido = "Tomar aquí";
-            }
-        }
-
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton4.Checked == true)
-            {
-                tipopedido = "Para llevar";
-            }
-        }
-
-        private void label51_Click(object sender, EventArgs e)
-        {
-            label51.Text = tipopedido.ToString();
+            label50.Text = numeropedido.ToString();
         }
 
         private void button15_Click_1(object sender, EventArgs e)
         {
             label50.Text = numeropedido.ToString();
-            label51.Text = tipopedido;
             tabControl1.SelectedTab = tabPage9;
-        }
-
-        private void calcularPrecioTotal(double preciopedido) {
-            for (int i = 0; i < carrito.Capacity; i++) {
-                preciopedido = preciopedido + carrito[i].getPrecio();
-            }
         }
 
         private void button33_Click(object sender, EventArgs e)
         {
             label50.Text = numeropedido.ToString();
-            label51.Text = tipopedido.ToString();
             label52.Text = preciopedido.ToString();
             tabControl1.SelectedTab = tabPage9;
         }
@@ -510,6 +485,44 @@ namespace TPV_Restaurante_Comida_Rapida
 
         private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void label52_Click(object sender, EventArgs e)
+        {
+            label52.Text = preciopedido.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage12;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage12;
+        }
+
+        private void verCarrito_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage12;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage9;
+            label50.Text = preciopedido.ToString();
+            label52.Text = preciopedido.ToString();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage3;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage3;
 
         }
     }
