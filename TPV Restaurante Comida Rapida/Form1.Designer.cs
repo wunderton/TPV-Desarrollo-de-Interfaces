@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pantalla1));
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.Producto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Precio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -43,6 +45,7 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
             this.label52 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.button19 = new System.Windows.Forms.Button();
@@ -124,9 +127,7 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.botonSalir = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.tabPage12.SuspendLayout();
             this.tabPage11.SuspendLayout();
             this.tabPage9.SuspendLayout();
@@ -172,6 +173,26 @@
             this.tabPage12.Size = new System.Drawing.Size(709, 322);
             this.tabPage12.TabIndex = 11;
             this.tabPage12.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(450, 254);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(151, 23);
+            this.button9.TabIndex = 8;
+            this.button9.Text = "Seguir Comprando";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(305, 246);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(108, 38);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "PAGAR";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // listView1
             // 
@@ -306,6 +327,16 @@
             this.tabPage9.TabIndex = 8;
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(396, 151);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(151, 23);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Seguir Comprando";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // label52
             // 
             this.label52.AutoSize = true;
@@ -357,6 +388,7 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.button11);
             this.tabPage7.Controls.Add(this.verCarrito);
             this.tabPage7.Controls.Add(this.button31);
             this.tabPage7.Controls.Add(this.button30);
@@ -440,15 +472,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(602, 189);
+            this.textBox1.Location = new System.Drawing.Point(533, 32);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(128, 20);
             this.textBox1.TabIndex = 19;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(548, 166);
+            this.label30.Location = new System.Drawing.Point(530, 16);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(155, 13);
             this.label30.TabIndex = 18;
@@ -1143,35 +1176,15 @@
             this.botonSalir.UseVisualStyleBackColor = true;
             this.botonSalir.Click += new System.EventHandler(this.botonSalir_Click);
             // 
-            // button7
+            // button11
             // 
-            this.button7.Location = new System.Drawing.Point(305, 246);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(108, 38);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "PAGAR";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(396, 151);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(151, 23);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Seguir Comprando";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(450, 254);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(151, 23);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Seguir Comprando";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button11.Location = new System.Drawing.Point(533, 58);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(128, 23);
+            this.button11.TabIndex = 26;
+            this.button11.Text = "Aplicar Descuento";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Pantalla1
             // 
@@ -1326,6 +1339,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button11;
     }
 }
 

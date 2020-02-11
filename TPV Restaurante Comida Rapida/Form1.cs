@@ -35,6 +35,7 @@ namespace TPV_Restaurante_Comida_Rapida
         int contadoroferta2;
         int contadoroferta3;
         int contadoroferta4;
+        String codPromocional = "WUNDERTON";
         int numeropedido = 0;
         String tipopedido;
         ListViewItem elementoListView;
@@ -524,6 +525,31 @@ namespace TPV_Restaurante_Comida_Rapida
         {
             tabControl1.SelectedTab = tabPage3;
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Boolean descuento;
+            if (textBox1.Text == "WUNDERTON")
+            {
+                if (preciopedido <= 2.50)
+                {
+                    descuento = false;
+                    MessageBox.Show("No se puede aplicar el descuento");
+                }
+                else if (preciopedido >= 2.51)
+                {
+                    descuento = true;
+                    preciopedido -= 2.50;
+                    item = listView1.Items.Add("DESCUENTO");
+                    item.SubItems.Add("-2,50");
+                }
+            }
         }
     }
 }

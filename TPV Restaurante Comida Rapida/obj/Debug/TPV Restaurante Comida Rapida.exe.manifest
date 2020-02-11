@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TPV Restaurante Comida Rapida.exe" size="3290112">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TPV Restaurante Comida Rapida.exe" size="3290624">
       <assemblyIdentity name="TPV Restaurante Comida Rapida" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>E/HwcoUA/zbdFoREo21wfnm9AsWKzT3MZOLzpsTixVs=</dsig:DigestValue>
+        <dsig:DigestValue>Uaast0p7Amz8bJoEQBwkX+k3YBfzw9wf6brwsXGX5AU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
