@@ -40,7 +40,9 @@ namespace TPV_Restaurante_Comida_Rapida
         String tipopedido;
         ListViewItem elementoListView;
         double preciopedido = 0;
-
+        String admin = "admin";
+        String passAdmin = "admin1234";
+        bool adminLogueado = false;
         public Pantalla1()
         {
             InitializeComponent();
@@ -140,6 +142,12 @@ namespace TPV_Restaurante_Comida_Rapida
             oferta1.ingredientes.Add("Queso");
   
             ControlBox = false;
+
+            textBox4.Enabled = false;
+            textBox2.Enabled = false;
+            button18.Enabled = false;
+           
+      
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -534,20 +542,65 @@ namespace TPV_Restaurante_Comida_Rapida
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Boolean descuento;
+            
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedTab = tabPage3;
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            if(textBox3.Text == admin && textBox5.Text == passAdmin)
+            {
+                adminLogueado = true;
+                textBox4.Enabled = true;
+                textBox2.Enabled = true;
+                button18.Enabled = true;
+                MessageBox.Show("Modo Administrador Activado");
+            }
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            adminLogueado = false;
+            textBox4.Enabled = false;
+            textBox2.Enabled = false;
+            button18.Enabled = false;
+            MessageBox.Show("Modo Usuario Activado");
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click_2(object sender, EventArgs e)
+        {
+            Boolean descuento = true;
             if (textBox1.Text == "WUNDERTON")
             {
-                if (preciopedido <= 2.50)
+                if (preciopedido <= 2.50 && contadorDescuentos >= 1 )
                 {
                     descuento = false;
                     MessageBox.Show("No se puede aplicar el descuento");
                 }
-                else if (preciopedido >= 2.51)
+                else if (preciopedido >= 2.51 && descuento == true)
                 {
+                    contadorDescuentos += 1;
                     descuento = true;
+                    MessageBox.Show("Descuento aplicado sobre el precio total");
                     preciopedido -= 2.50;
                     item = listView1.Items.Add("DESCUENTO");
                     item.SubItems.Add("-2,50");
+                    button11.Enabled = false;
                 }
             }
         }
