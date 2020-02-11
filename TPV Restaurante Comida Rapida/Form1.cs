@@ -587,14 +587,13 @@ namespace TPV_Restaurante_Comida_Rapida
             Boolean descuento = true;
             if (textBox1.Text == "WUNDERTON")
             {
-                if (preciopedido <= 2.50 && contadorDescuentos >= 1 )
+                if (preciopedido <= 2.50)
                 {
                     descuento = false;
                     MessageBox.Show("No se puede aplicar el descuento");
                 }
                 else if (preciopedido >= 2.51 && descuento == true)
                 {
-                    contadorDescuentos += 1;
                     descuento = true;
                     MessageBox.Show("Descuento aplicado sobre el precio total");
                     preciopedido -= 2.50;
